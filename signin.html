@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1">
+    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   
+    <title>Tring-Tring</title>
+    
+    <style>
+    .clear{
+      clear: both;
+    }
+    </style>
+
+    <!-- Inline scripts are forbidden in Firefox OS apps (CSP restrictions),
+         so we use a script file. -->
+    <script src="app.js" defer></script>
+
+  </head>
+
+  <body>
+    
+    <nav class="blue">
+	    <div class="nav-wrapper">
+	      <a href="index.html" class="brand-logo">Tring-Tring</a>
+	      <a class='button-collapse' data-activates='mobile-demo' href='#'>
+        <img src="menu.png"/>
+        </a>
+	      <ul class='side-nav' id='mobile-demo'>
+			    <li><a href="signin.html">Sign-In</a></li>
+          <li><a href="signup.html">Sign-Up</a></li>
+	        <li><a href="about.html">About Us</a></li>
+	      </ul>
+	    </div>
+	  </nav>
+    
+    <div class="container">
+      <h3 class="grey-text text-darken-2 center">Sign In</h3>
+
+      <ul class="collapsible popout row" data-collapsible="accordion">
+        
+        <li>
+          <div class="collapsible-header"><i class="material-icons">perm_identity</i>Username</div>
+          <div class="collapsible-body">
+            <div class="container">
+              <div class="input-field col m7 offset-m1 s12">
+                <input id="username" type="text">
+                <label for="username">Username</label>
+              </div>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </li>
+        
+        <li>
+          <div class="collapsible-header"><i class="material-icons">vpn_key</i>Password</div>
+          <div class="collapsible-body">
+            <div class="container">
+              <br>
+              <div class="input-field col m7 offset-m1 s12">
+                <input id="password" type="password">
+                <label for="password">Password</label>
+              </div>
+              <br>
+              <a id="signin" class="waves-effect waves-light btn col m3 s12">Submit<i class="material-icons">send</i></a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </li>
+       
+      </ul>
+
+
+    </div>
+
+
+    <script type="text/javascript" src="materialize/js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+  </body>
+
+</html>
